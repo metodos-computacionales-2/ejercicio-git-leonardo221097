@@ -1,5 +1,7 @@
 #include <iostream>
-double f(int x);
+double diametro(int x);
+double perimetro (int x);
+double area (int x);
 
 
 int main(void)
@@ -8,17 +10,13 @@ int main(void)
     int N;
     // se pide el valor de N
     std::cin>>N;
-    for (int i=0;i<N;i++)
-    {
-    if (i%2==0)
-     {
-    std:: cout<<f(i)<<"\t"<<i<<std::endl;
-     }
-    }
+    
+    std:: cout <<"el diametro es"<<diametro(N)<<"con un radio de:"<<N<<std::endl;
+    
     return 0;
 }
 
-double f(int x)
+double diametro(int x)
 {
-    return x*x;
+    return x*2;
 }
