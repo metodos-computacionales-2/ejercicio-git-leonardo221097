@@ -15,6 +15,7 @@ int main(void)
     
     std:: cout <<"el diametro es"<<diametro(N)<<"con un radio de:"<<N<<std::endl;
     std:: cout <<"el perimetro"<<perimetro(N)<<"con un radio de:"<<N<<std::endl;
+    std:: cout <<"el area del cirulo es"<<area(N)<<"con un radio de:"<<N<<std::endl;
     
     return 0;
 }
@@ -26,4 +27,8 @@ double diametro(int x)
 double perimetro(int x)
 {
 return 2*M_PI*x;
+}
+double area(int x)
+{
+return M_PI*x*x;
 }
