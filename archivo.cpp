@@ -16,7 +16,26 @@ int main(void)
     int N3;
     // se pide el valor de N
     std::cin>>N3;
+    
+    if ((N1*N1)+(N2*N2)==N3*N3)
+{
+ std::cout<<"si"<<std::endl;
+}
+else if (N1*N1+N3*N3==N2*N2)
+{
+std::cout<<"si"<<std::endl;
+}
+ else if (N2*N2+N3*N3==N1*N1)
+{
+ std::cout<<"si"<<std::endl;
+}
+else 
+{std::cout<<"no"<<std::endl;}
 
 }
+
+
+
+
 
  
